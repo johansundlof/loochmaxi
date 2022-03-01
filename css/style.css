@@ -1,0 +1,82 @@
+.btn-primary{
+	background-color: black;
+	margin-bottom: 10px;
+}
+
+#services{
+	background-color: black;
+	color: white;
+}
+
+p{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 26px;
+	text-align: left;
+	max-width: 700px;
+	margin: 0px auto;
+	
+}
+
+ul{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 22px;
+	text-align: left;
+	max-width: 700px;
+	margin: 0px auto;
+	
+}
+
+li{
+	margin: 20px;
+}
+
+.themeImage{
+	width: 100%;
+	max-width: 500px;
+	margin: 0px auto;
+}
+
+h3{
+	max-width: 700px;
+	margin: 0px auto;
+}
+
+audio{
+	margin-top: 20px;
+}
+
+
+
+
+#services{
+	background-color: black;
+	color: white;
+}
+
+
+.card-body{
+	background-color: black;
+	color:			white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#contact p{
+	margin-top: 20px;
+	text-align: center;
+}
+
+.clue{
+	margin: 0px auto;
+	margin-top: 20px;
+	clear: both;
+}
+
+figure{
+	text-align: center;
+}
+
+.sound{
+	clear: both;
+}
+
+

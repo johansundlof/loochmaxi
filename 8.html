@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Barnens littfest - I Rävens Spår</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+    <!--User stylesheet-->
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+
+  <script>
+    function validateForm() {
+      var answer = document.forms["contactForm"]["answer"].value.toLowerCase();
+      if (answer == "älv") {
+          return true;
+      }else{
+        document.getElementById("answer").value ="";
+        document.getElementById("answer").setAttribute("placeholder","Det var tyvärr fel svar, försök igen!");
+        return false;
+      }
+    }
+  </script>
+
+  <body id="page-top">
+
+
+
+    <!-- Header -->
+    <!--
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+        <div class="intro-heading text-uppercase">Teknikjakten2!</div>
+          <div class="intro-lead-in">Kan du lösa mysteriet?</div>
+          
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Starta jakten!</a>
+        </div>
+      </div>
+    </header>
+-->
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Barnens littfest - I Rävens Spår!</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+ 
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#clue">Behöver du en ledtråd?</a>
+            </li> 
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Part 1 -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Uppdrag 8 </h2>
+            <br />
+
+            <h3>Litteräven blir överlycklig när hen ser Tvättis hemliga meddelande på fönstren.</h3>
+            <br />
+            <p>Aha, Tvättis har lämnat någon sorts kod, tänker räven. Jag måste knäcka den koden för att få veta var Tvättis och statyn finns.
+            </p>
+            <img  class="clue" style="max-width: 100px" src="./img/forstoringsglas.png" alt="Bild som visar hur litteräven flyttar på en staty." />
+            <br />
+            <br />
+            <h3>Uppgift</h3>
+            <br />
+            <p>
+            Använd kodnyckeln här nedanför för att knäcka den hemliga koden. Då får du veta vart Tvättis är på väg. 
+            </p>
+            <img class="clue themeImage" src="./img/kodnyckel.png" alt="bild som visar en rosa figur med en massa konstiga armar. Kan det vara en staty?" />
+         
+            
+            <h3></h3>
+            <br />
+           
+          </div>
+
+          <!-- Exempel på bild
+          <img  class="clue" src="./img/rosa.png" alt="bild som visar en rosa figur med en massa konstiga armar. Kan det vara en staty?" />-->
+          
+          <br />    
+          <br />      
+          
+        </div>
+
+        <!-- Exempel på bild ljud
+        <figure>
+          <figcaption>Lyssna på meddelandet:</figcaption>
+          <audio
+              controls
+              src="./sound/birds.wav">
+                  Your browser does not support the
+                  <code>audio</code> element.
+          </audio>
+      </figure>-->
+      </div>
+    </section>
+
+ 
+    
+     <!-- Contact -->
+     <!-- Contact -->
+     <section id="contact">
+      <div class="container">
+
+        
+
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Svar</h2>
+            <h3 class="section-subheading text-muted">Svara på frågan för att ta dig vidare</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <form id="contactForm" name="sentMessage" novalidate="novalidate" action="./9.html" onsubmit="return validateForm()" autocomplete="off">
+            
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input class="form-control" id="answer" type="text" placeholder="Skriv ditt svar här" required="required" data-validation-required-message="Rutan får inte vara tom">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Skicka ditt svar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
+    <!--OM MAN INTE VILL HA SVARSRUTA ANVÄNDS DENNA DEL
+
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Vet du vart du skall gå?</h2>
+        <h3 class="section-subheading text-muted">Svara på frågan för att ta dig vidare</h3>
+
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="./2.html">Ja</a>
+      </div>
+    </div>
+  -->
+
+      <!--Ledtråd-->
+      <br/>
+      <br/>
+      
+      <div class="col-lg-12 text-center">
+        <a id="clue"><h3 class="section-heading text-uppercase">Även hjältar kan ibland behöva en ledtråd</h3></a>
+        <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#ledtrad" role="button" aria-expanded="false" aria-controls="ledtrad">
+              Ledtråd 1
+            </a>
+            <a class="btn btn-primary" data-toggle="collapse" href="#ledtrad2" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Ledtråd 2
+            </a>
+            <a class="btn btn-primary" data-toggle="collapse" href="#ledtrad3" role="button" aria-expanded="false" aria-controls="ledtrad3">
+              Ledtråd 3
+            </a>
+        </p>
+
+      <div class="collapse" id="ledtrad">
+        <div class="card card-body">
+          Ledtråd 1: Titta på meddelandet på fönstret och använd kodnyckeln för att ta reda på vilket ord det är.
+        </div>
+      </div>
+      <div class="collapse" id="ledtrad2">
+        <div class="card card-body">
+          Ledtråd 2: Ordet är namnet för något blött. Det finns en sådan som rinner genom Umeå.
+        </div>
+      </div>
+      <div class="collapse" id="ledtrad3">
+        <div class="card card-body">
+          Ledtråd 3: Ordet har tre bokstäver och börjar på Ä. Det låter lite som siffran som kommer efter tio.
+        </div>
+      </div><!--Slut ledtråd-->
+
+
+    </section>
+
+        <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <span class="copyright">
+              <a href="https://www.umea.se/upplevaochgora/bibliotek.4.27a2de8b172da059ace1ba1.html" style="font-weight: bold">
+                  Folkbiblioteken i Umeå kommun
+              </a>
+            </span>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript 
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    -->
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+    <script src="js/agency.min.js"></script>
+
+
+  </body>
+
+</html>

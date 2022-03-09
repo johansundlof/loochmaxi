@@ -30,7 +30,7 @@
   <script>
     function validateForm() {
       var answer = document.forms["contactForm"]["answer"].value.toLowerCase();
-      if (answer == "slug" || answer == "listig" || answer == "klok" ) { 
+      if (answer == "spetälska") { 
           return true;
       }else{
         document.getElementById("answer").value ="";
@@ -186,24 +186,24 @@
               Ledtråd 2
             </a>
             <a class="btn btn-primary" data-toggle="collapse" href="#ledtrad3" role="button" aria-expanded="false" aria-controls="collapseExample">
-              Ledtråd 3 - Berätta vilket ord det är
+              Ledtråd 3
             </a>
 
         </p>
 
       <div class="collapse" id="ledtrad">
         <div class="card card-body">
-          Ledtråd 1: Ordet betyder ungefär samma sak som smart.
+          Ledtråd 1: Vad är det för ord som bytts ut?
         </div>
       </div>
       <div class="collapse" id="ledtrad2">
         <div class="card card-body">
-          Ledtråd 2: I skogen finns det små vägar man kan gå på. Vad kallas de? ordet vi söker slutar på det ordet.
+          Ledtråd 2: Fyll i det ordet i rutan.
         </div>
       </div>
       <div class="collapse" id="ledtrad3">
         <div class="card card-body">
-          Ledtråd 3: Listig eller slug.
+          Ledtråd 3: rätt svar är spetälska
         </div>
       </div><!--Slut ledtråd-->
 

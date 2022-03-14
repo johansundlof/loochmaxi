@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Barnens littfest - I Rävens Spår</title>
+    <title>Barnens littfest - Lo och Maxis sjukdomsäventyr</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +30,7 @@
   <script>
     function validateForm() {
       var answer = document.forms["contactForm"]["answer"].value.toLowerCase();
-      if (answer == "stilla") {
+      if (answer == "wells") {
           return true;
       }else{
         document.getElementById("answer").value ="";
@@ -61,7 +61,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Barnens littfest - I Rävens Spår!</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Lo och Maxis sjukdomsäventyr</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
@@ -83,40 +83,18 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Litteräven tänker om...</h2>
-
-            <figure>
-              <img  class="clue" style="max-width: 400px" src="./img/bortglomd.png" alt="Bild som visar litteräven som är ledsen." />
-             
-              <h3>Lyssna på Litteräven</h3>
-              <!--<figcaption>Lyssna på meddelandet:</figcaption>-->
-              <audio
-                  controls
-                  src="./sound/stoppaTvattis.mp3">
-                      Your browser does not support the
-                      <code>audio</code> element.
-              </audio>
-            </figure>
-
-
-            <p>Det plingar till i rävomobiltelefonen. Ett SMS från Tvättis som vill att Litteräven ska komma och se när statyn sjunker.
-              <p>"Kom till platsen på bilden. Jag har lämnat ett kodat meddelande som säger var det kommer hända."
-              <p>Men med påfylld energi börjar Litteräven tveka. Har hen tänkt helt fel? 
-             <p>Nu när jag är mätt igen verkar min plan inte alls lika bra! Tänk om alla blir ledsna på mig nu, funderar räven. Jag vill ju att alla skulle bli glada av att se min staty. Inte ledsna för att den andra statyn är borta!</p> 
-              <p>Nu får Litteräven bråttom. Oj oj, jag måste skynda, måste springa, måste stoppa Tvättis!</p>
+              <p><br />När ni kommer fram till Hamnmagasinet står där ett skelett och spelar gitarr. Skelettet sjunger en sång om en bok som handlar om en tidsmaskin - vilket sammanträffande!
+                <br />
+                <img  class="clue" style="max-width: 500px" src="./img/tuberkulosgitarr.png" alt="Illustration av ett skelett som spelar gitarr." />
+                <br />
+                <h3>Uppgift</h3>
+                <p>
+              
+                 Ta reda på vad författaren som skrivit boken Tidsmaskinen (från 1895) heter i efternamn. <br /> <br />Kom ihåg att ta en ledtråd om du kör fast.
+                </p>
+              </div>
             </p>
-            <br />
-            <br />
-            <h3>Dags att stoppa Tvättis!</h3>
-            <br />
-            <p>Gå längst med Rådhusesplanaden tillbaka mot Rådhustorget. Sväng höger i den första korsningen. In på Västra Norrlandsgatan.</p>
-            <img  class="themeImage" style="max-width: 700px" src="./img/RävionVästerbotten1.1.jpg" alt="Bild som visar att man skall gå längst med esplanaden och ta den första svängen till höger." />
-            <br />
-            <br />
-            <p>Gå en bit in på gatan och titta efter ett mystiskt meddelande. Tvättis har lämnat ett meddelande på tre fönster.
-              På bilden här nedanför ser du vilka fönster det är.
-            </p>
-            <img  class="themeImage" style="max-width: 700px" src="./img/fonster.jpg" alt="Bild som visar vilket fönster man skall titta på." />
+          
 
 
           </div>
@@ -148,6 +126,86 @@
      <!-- Contact -->
      <section id="contact">
       <div class="container">
+
+        
+
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Svar</h2>
+            <h3 class="section-subheading text-muted">Svara på frågan för att ta dig vidare</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <form id="contactForm" name="sentMessage" novalidate="novalidate" action="./8.html" onsubmit="return validateForm()" autocomplete="off">
+            
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input class="form-control" id="answer" type="text" placeholder="Skriv ditt svar här" required="required" data-validation-required-message="Rutan får inte vara tom">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Skicka ditt svar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+ 
+
+
+    <!--OM MAN INTE VILL HA SVARSRUTA ANVÄNDS DENNA DEL
+
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Vet du vart du skall gå?</h2>
+        <h3 class="section-subheading text-muted">Svara på frågan för att ta dig vidare</h3>
+
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="./2.html">Ja</a>
+      </div>
+    </div>
+  -->
+
+      <!--Ledtråd-->
+      <br/>
+      <br/>
+      
+      <div class="col-lg-12 text-center">
+        <a id="clue"><h3 class="section-heading text-uppercase">Även hjältar kan ibland behöva en ledtråd</h3></a>
+        <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#ledtrad" role="button" aria-expanded="false" aria-controls="ledtrad">
+              Ledtråd 1
+            </a>
+            <a class="btn btn-primary" data-toggle="collapse" href="#ledtrad2" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Ledtråd 2
+            </a>
+            <a class="btn btn-primary" data-toggle="collapse" href="#ledtrad3" role="button" aria-expanded="false" aria-controls="ledtrad3">
+              Ledtråd 3 - Om du vill veta svaret...
+            </a>
+        </p>
+
+      <div class="collapse" id="ledtrad">
+        <div class="card card-body">
+          Ledtråd 1: det är tillåtet att googla efter rätta svaret.
+        </div>
+      </div>
+      <div class="collapse" id="ledtrad2">
+        <div class="card card-body">
+          Ledtråd 2: Det börjar på W <br/>
+
+        </div>
+      </div>
+      <div class="collapse" id="ledtrad3">
+        <div class="card card-body">
+          Ledtråd 3: Rätt svar är Wells        </div>
+      </div><!--Slut ledtråd-->
+
+
+    </section>
 
         
       <!--
@@ -182,14 +240,6 @@
 
    
 
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">Är du framme vid det hemliga meddelandet?</h2>
-        
-
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="./8.html">Ja</a>
-      </div>
-    </div>
 
 
       <!--Ledtråd-->

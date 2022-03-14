@@ -30,7 +30,7 @@
   <script>
     function validateForm() {
       var answer = document.forms["contactForm"]["answer"].value.toLowerCase();
-      if (answer == "stilla") {
+      if (answer == "wells") {
           return true;
       }else{
         document.getElementById("answer").value ="";
@@ -95,15 +95,16 @@
             <h3>De skyndar sig tillbaka ner till älven och följer signalen - det verkar som att den kommer från Hamnmagasinet.</h3>
             <br />
             <p>Gå till Hamnmagasinet. Det ligger längs älven, precis efter Väven och restautangbåten Sjöbris.</p>
-            <br />
-            <br />
-            <br />
-            <h3>Uppgift</h3>
-            <p>
-          
-             Ta reda på vad ordet utfodra heter på västerbottnisk dialekt? Svaret hittar du någonstans i Sara Lidman-tunneln. <br /> <br />Kom ihåg att ta en ledtråd om du kör fast.
-            </p>
-          </div>
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">Vet du vart du skall gå? Gå i så fall dit och tryck sedan på Ja.</h2>
+                <!--<h3 class="section-subheading text-muted">Svara på frågan för att ta dig vidare</h3>-->
+        
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="./7.html">Ja</a>
+              </div>
+            </div>
+
+           
 
      
 
@@ -132,90 +133,7 @@
     
      <!-- Contact -->
      <!-- Contact -->
-     <section id="contact">
-      <div class="container">
 
-        
-
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Svar</h2>
-            <h3 class="section-subheading text-muted">Svara på frågan för att ta dig vidare</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <form id="contactForm" name="sentMessage" novalidate="novalidate" action="./7.html" onsubmit="return validateForm()" autocomplete="off">
-            
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <input class="form-control" id="answer" type="text" placeholder="Skriv ditt svar här" required="required" data-validation-required-message="Rutan får inte vara tom">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  
-                <div class="col-lg-12 text-center">
-                  <div id="success"></div>
-                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Skicka ditt svar</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
- 
-
-
-    <!--OM MAN INTE VILL HA SVARSRUTA ANVÄNDS DENNA DEL
-
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">Vet du vart du skall gå?</h2>
-        <h3 class="section-subheading text-muted">Svara på frågan för att ta dig vidare</h3>
-
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="./2.html">Ja</a>
-      </div>
-    </div>
-  -->
-
-      <!--Ledtråd-->
-      <br/>
-      <br/>
-      
-      <div class="col-lg-12 text-center">
-        <a id="clue"><h3 class="section-heading text-uppercase">Även hjältar kan ibland behöva en ledtråd</h3></a>
-        <p>
-            <a class="btn btn-primary" data-toggle="collapse" href="#ledtrad" role="button" aria-expanded="false" aria-controls="ledtrad">
-              Ledtråd 1
-            </a>
-            <a class="btn btn-primary" data-toggle="collapse" href="#ledtrad2" role="button" aria-expanded="false" aria-controls="collapseExample">
-              Ledtråd 2
-            </a>
-            <a class="btn btn-primary" data-toggle="collapse" href="#ledtrad3" role="button" aria-expanded="false" aria-controls="ledtrad3">
-              Ledtråd 3 - Om du vill veta svaret...
-            </a>
-        </p>
-
-      <div class="collapse" id="ledtrad">
-        <div class="card card-body">
-          Ledtråd 1: Parlör... Kan svaret finnas i närheten av det ordet.
-        </div>
-      </div>
-      <div class="collapse" id="ledtrad2">
-        <div class="card card-body">
-          Ledtråd 2: Om man inte rör sig är man ... ja vadå? <br/>
-          <img  class="themeImage" style="max-width: 700px" src="./img/LidmanLedtrad.jpg" alt="Bild där ordet stilla är understruket." />
-
-        </div>
-      </div>
-      <div class="collapse" id="ledtrad3">
-        <div class="card card-body">
-          Ledtråd 3: Rätt svar är stilla.
-        </div>
-      </div><!--Slut ledtråd-->
-
-
-    </section>
 
         <!-- Footer -->
     <footer>
